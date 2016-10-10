@@ -1,0 +1,64 @@
+/*div index 10*/
+/*menu index 20*/
+.section{
+    background-size: cover;
+}
+
+.animate{
+    transition: all .8s ease-in-out 0s;
+    -moz-transition: all .8s ease-in-out 0s;
+    -ms-transition: all .8s ease-in-out 0s;
+    -webkit-transition: all .8s ease-in-out 0s;
+}
+
+.test-div{
+    width: 300px;
+    height:300px;
+    background-color: greenyellow;
+    z-index: 10;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.fly-up{
+    top:50px;
+    left:0px;
+}
+
+.back-white{
+    background-color:white;
+}
+
+.back-red{
+    background-color: red;
+}
+
+/*bottom transparent cover*/
+.bottom-transparent-cover{
+    height:50%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity: 0.5;
+}
+
+
+/*menu*/
+.menu{
+    z-index: 20;
+    position: fixed;
+    background-color: white;
+}
+
+.menu ul li a{
+    color:black;
+}
+
+/*section1*/
+
+/*section2*/
+.section-2{
+    background-image: url("../imgs/sec-2.jpg");
+}
