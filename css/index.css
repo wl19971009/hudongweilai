@@ -182,7 +182,6 @@ a{
     .words-container{
         width:570px;
     }
-
     .words-container h1{
         font-size: 35px;
         display: inline-block;
@@ -373,6 +372,8 @@ a{
         background: rgba(255,255,255,0.6);
         padding-top: 175px;
         padding-left: 20px;
+        height: 0;
+
     }
     .section-3 .container .text_box .text_t{
         width: auto;

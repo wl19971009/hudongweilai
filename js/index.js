@@ -29,7 +29,7 @@ $(document).ready(function() {
             if(index == 3){
                 if(screenWidth<=768){
                     var winH = $(window).height();
-                    $('pc_box').animate({height:winH+"px",opacity:1,top:"0"},divAnimationTime);
+                    $('pc_box').animate({height:winH+"px",opacity:1},divAnimationTime);
                     $('.computer').animate({left:"0",opacity:1},divAnimationTime);
                     $('.text_t').animate({marginLeft:"0",opacity:1},divAnimationTime);
                     $('.list_box').animate({marginRight:"0",opacity:1},divAnimationTime);
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 }
                 else{
                     var winH = $(window).height();
-                    $('.pc_box').animate({height:winH+"px",opacity:1,top:"0"},divAnimationTime);
+                    $('.pc_box').animate({height:winH+"px",opacity:1},divAnimationTime);
                     $('.computer').animate({left:"0",opacity:1},divAnimationTime);
                     $('.text_t').animate({left:"5%",opacity:1},divAnimationTime);
                 }
@@ -69,17 +69,18 @@ $(document).ready(function() {
             }
             if(index == 3){
                 if(screenWidth>=1200){
-                    $('.pc_box').animate({height:"0",opacity:1,top:"-50px"},divAnimationTime);
+                    $('.pc_box').animate({height:"0",opacity:1},divAnimationTime);
                     $('.computer').animate({left:"50px",opacity:0},divAnimationTime);
                     $('.text_t').animate({left:"-50px",opacity:0},divAnimationTime);
 
                 }
                 else if(screenWidth<=768){
+                    $('.pc_box').animate({height:"0",opacity:1},divAnimationTime);
                     $('.text_t').animate({marginLeft:"-50px",opacity:0},divAnimationTime);
                     $('.list_box').animate({marginRight:"0",opacity:0},divAnimationTime);
                 }
                 else{
-                    $('.pc_box').animate({height:'0',opacity:1,top:"-50px"},divAnimationTime);
+                    $('.pc_box').animate({height:'0',opacity:1},divAnimationTime);
                     $('.computer').animate({left:"50px",opacity:0},divAnimationTime);
                     $('.text_t').animate({left:"-50px",opacity:0},divAnimationTime);
                 }
