@@ -243,6 +243,7 @@ a{
     z-index: 20;
     position: fixed;
     background-color: white;
+    display:none;
 }
 
 .menu ul li a{
@@ -282,8 +283,9 @@ a{
     .section-2 .words-container .contents{
         margin-top:65px;
     }
-}
 
+
+}
 @media (min-width: 768px) and (max-width: 1200px) {
     .section-2{
         background-image: url("../imgs/sec-2.jpg");
@@ -319,6 +321,7 @@ a{
     .section-2 .words-container .contents{
         margin-top:65px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -352,6 +355,262 @@ a{
 
     .section-2 .words-container .contents{
         margin-top:15px;
+    }
+}
+
+
+/*section3*/
+@media (min-width: 1200px) {
+    .section-3{
+        background-image: url("../imgs/pc1.fw.png");
+        font-family: 微软雅黑;
+    }
+    .section-3 .back_white{
+        width: auto;
+        height: auto;
+    }
+    .section-3 .text_box .pc_box{
+        background: rgba(255,255,255,0.6);
+        padding-top: 175px;
+        padding-left: 20px;
+    }
+    .section-3 .container .text_box .text_t{
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 5%;
+    }
+    .section-3 .container .text_box .text_1{
+        font-size: 2em;
+        color: #CC0000;
+    }
+
+    .section-3 .container .text_box .text_2{
+        font-size: 1.5em;
+        color: #5E5E5E;
+        display: block;
+        margin-top: -5px;
+    }
+    .section-3 .container .text_box .text_3{
+        font-size: 0.9em;
+        color: #CC0000;
+        line-height: 23px;
+        margin-top: 40px;
+        display: block;
+        width: 75%;
+    }
+    .section-3 .container .text_box .anniu{
+        width: 100px;
+        height: 30px;
+        background-color: #EDEDED;
+        font-size: 12px;
+        color: #CC0000;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .section-3 .container .list_box{
+        height: 330px;
+        width: 88px;
+        background-color: #CC0000;
+        text-align: center;
+        padding: 0;
+        float: left;
+    }
+    .section-3 .container .list_box .box_b{
+        margin-top: 27px;
+    }
+    .section-3 .container .list_box a{
+        font-size: 13px;
+        color: #fff;
+    }
+    .section-3 .container .list_box .box_b span{
+        margin-top: 5px;
+        display: block;
+    }
+    .section-3 .container .computer{
+        width: 559px;
+        height: 330px;
+        position: absolute;
+        top: 50%;
+        margin-top: -147px;
+        left: 0;
+        margin-left: 470px;
+
+    }
+    .section-3 .container .computer .img_box{
+        width: 470px;
+        height: 330px;
+        background: url("../imgs/6.fw.png")no-repeat;
+        background-size: 100%;
+        position: absolute;
+        margin-left: 88px;
+        padding: 0 36px 0 36px;
+    }
+    .section-3 .container .computer .black{
+        background: rgba(0,0,0,0.3);
+        width: 470px;
+        height: 330px;
+        margin-left: 88px;
+    }
+    .section-3 .container .pc_box  .img_box .yuan{
+        width: 81px;
+        height: 81px;
+        border-radius: 40px;
+        background: rgba(0,0,0,0.5);
+        margin-right: 27px;
+        margin-top: 125px;
+        font-size: 14px;
+        padding: 0;
+        text-align: center;
+        padding-top: 25px;
+    }
+    .section-3 .container .pc_box  .img_box .yuan a{
+        color: #fff;
+    }
+    .section-3 .container .pc_box  .img_box .on{
+        margin-right: -27px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .section-3{
+        background-image: url("../imgs/pc1.fw.png");
+        font-family: 微软雅黑;
+    }
+    .section-3 .back_white{
+        background:rgba(255,255,255,0.8);
+        width: 100%;
+        height: 100%;
+    }
+    .section-3 .container .text_box{
+        margin-top: 140px;
+    }
+    .section-3 .container .text_box .text_t{
+        padding: 0 15px 0 15px;
+    }
+    .section-3 .container .text_box .pc_box{
+        height: auto!important;
+        padding: 0;
+    }
+    .section-3 .container .text_box .text_1{
+        font-size: 18px;
+        color: #CC0000;
+    }
+    .section-3 .container .text_box .text_2{
+        font-size: 15px;
+        color: #5E5E5E;
+        display: block;
+        margin-top: -5px;
+    }
+    .section-3 .container .text_box .text_3{
+        font-size: 12px;
+        color: #CC0000;
+        line-height: 20px;
+    }
+    .section-3 .container .text_box .anniu{
+        width: 60px;
+        height: 25px;
+        border: 1px solid #CC0000;
+        font-size: 12px;
+        color: #CC0000;
+        display: block;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+    .section-3 .container .list_box{
+
+        background-color: #CC0000;
+        text-align: center;
+        margin:  55px auto 0 auto;
+        padding: 20px 10px 20px 10px;
+        display: block;
+    }
+    .section-3 .container .list_box .box_b{
+        padding: 0;
+        border-right: 1px solid #fff;
+    }
+    .section-3 .container .list_box .on{
+        border-right: none;
+    }
+    .section-3 .container .list_box span{
+        font-size: 13px;
+        color: #fff;
+    }
+    .section-3 .container .pc_box  .img_box .yuan{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .section-3{
+        background-image: url("../imgs/pc1.fw.png");
+        font-family: 微软雅黑;
+    }
+    .section-3 .back_white{
+        background:rgba(255,255,255,0.8);
+        width: 100%;
+        height: 100%;
+    }
+    .section-3 .container .text_box{
+        margin-top: 140px;
+    }
+    .section-3 .container .text_box .text_t{
+        padding: 0 15px 0 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .section-3 .container .text_box .pc_box{
+        height: auto!important;
+        padding: 0;
+    }
+    .section-3 .container .text_box .text_1{
+        font-size: 18px;
+        color: #CC0000;
+    }
+    .section-3 .container .text_box .text_2{
+        font-size: 15px;
+        color: #5E5E5E;
+        display: block;
+        margin-top: -5px;
+    }
+    .section-3 .container .text_box .text_3{
+        font-size: 12px;
+        color: #CC0000;
+        line-height: 20px;
+    }
+    .section-3 .container .text_box .anniu{
+        width: 60px;
+        height: 25px;
+        border: 1px solid #CC0000;
+        font-size: 12px;
+        color: #CC0000;
+        display: block;
+        text-align: center;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+    .section-3 .container .list_box{
+        background-color: #CC0000;
+        text-align: center;
+        margin:  55px auto 0 auto;
+        padding: 20px 10px 20px 10px;
+        display: block;
+    }
+    .section-3 .container .list_box .box_b{
+        padding: 0;
+        border-right: 1px solid #fff;
+    }
+    .section-3 .container .list_box .on{
+        border-right: none;
+    }
+    .section-3 .container .list_box span{
+        font-size: 13px;
+        color: #fff;
+    }
+    .section-3 .container .pc_box  .img_box .yuan{
+        display: none;
     }
 }
 
