@@ -45,6 +45,24 @@ $(document).ready(function() {
                 }
 
             }
+            if(index == 5){
+                if(screenWidth<=768){
+                    $('.bottom-transparent-cover').animate({height:"75%"},divAnimationTime);
+                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                }
+                else if(screenWidth>=1200){
+                    $('.bottom-transparent-cover').animate({height:"50%"},divAnimationTime);
+                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                }
+                else{
+                    $('.bottom-transparent-cover').animate({height:"50%"},divAnimationTime);
+                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                }
+
+            }
 
         },
 
@@ -80,6 +98,18 @@ $(document).ready(function() {
                     $('.list_box').animate({marginRight:"0",opacity:0},divAnimationTime);
                 }
             }
+            if(index == 5){
+                if(screenWidth>=1200){
+                    $('.bottom-transparent-cover').animate({height:"0px"},divAnimationTime);
+                    $('.tag-container').animate({right:"-50px",opacity:0},divAnimationTime);
+                    $('.words-container').animate({left:"-50px",opacity:0},divAnimationTime);
+                }
+                else{
+                    $('.bottom-transparent-cover').animate({height:"0px"},divAnimationTime);
+                    $('.tag-container').animate({right:"-50px",opacity:0},divAnimationTime);
+                    $('.words-container').animate({left:"-50px",opacity:0},divAnimationTime);
+                }
+            }
 
         }
     });
@@ -96,6 +126,12 @@ $(document).ready(function() {
         var index=$(this).index();
         $(".section-3 .container .computer .img_box .img_img").eq(index).show().siblings().hide();
         $(".section-3 .container .container_text .text_tes").eq(index).show().siblings().hide();
+    })
+    $(".section-5 .tag-container .tag-container-tags .tag-container-tag").hover(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+        var index=$(this).index();
+        $(".section-5 .tag-container img").eq(index).show().siblings().hide();
+        $(".section-5 .words-container .contents").eq(index).show().siblings().hide();
     })
 });
 
