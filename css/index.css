@@ -62,7 +62,7 @@ a{
 }
 
 .rm-padding{
-    padding:0 !important;
+    /*padding:0 !important;*/
 }
 
 /*bottom transparent cover*/
@@ -375,13 +375,15 @@ a{
         height: 0;
 
     }
+
     .section-3 .container .text_box .text_t{
-        width: auto;
-        height: auto;
+        height: 300px;
         position: absolute;
         left: 5%;
+        width: 80%;
+        overflow: hidden;
     }
-    .section-3 .container .text_box .text_1{
+    .section-3 .container .text_box  .text_1{
         font-size: 2em;
         color: #CC0000;
     }
@@ -443,11 +445,17 @@ a{
     .section-3 .container .computer .img_box{
         width: 470px;
         height: 330px;
-        background: url("../imgs/6.fw.png")no-repeat;
+        /*background: url("../imgs/6.fw.png")no-repeat;*/
         background-size: 100%;
         position: absolute;
         margin-left: 88px;
         padding: 0 36px 0 36px;
+        overflow: hidden;
+    }
+    .section-3 .container .computer .img_box img{
+        top: 0;
+        left: 0;
+        position: absolute;
     }
     .section-3 .container .computer .black{
         background: rgba(0,0,0,0.3);
@@ -466,6 +474,7 @@ a{
         padding: 0;
         text-align: center;
         padding-top: 25px;
+        z-index: 1;
     }
     .section-3 .container .pc_box  .img_box .yuan a{
         color: #fff;
@@ -543,6 +552,9 @@ a{
     .section-3 .container .pc_box  .img_box .yuan{
         display: none;
     }
+    .section-3 .container .computer .img_box{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     .section-3{
@@ -561,6 +573,10 @@ a{
         padding: 0 15px 0 15px;
         margin-left: 0;
         width: 100%;
+    }
+    .section-3 .container .text_box .text_t .text_t .container_text{
+        margin-top: 100px;
+        height: 200px;
     }
     .section-3 .container .text_box .pc_box{
         height: auto!important;
@@ -611,6 +627,9 @@ a{
         color: #fff;
     }
     .section-3 .container .pc_box  .img_box .yuan{
+        display: none;
+    }
+    .section-3 .container .computer .img_box{
         display: none;
     }
 }
