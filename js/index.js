@@ -48,21 +48,36 @@ $(document).ready(function() {
             if(index == 5){
                 if(screenWidth<=768){
                     $('.bottom-transparent-cover').animate({height:"75%"},divAnimationTime);
-                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
-                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                    $('.tag-container_2').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container_2').animate({left:"0",opacity:1},divAnimationTime);
                 }
                 else if(screenWidth>=1200){
                     $('.bottom-transparent-cover').animate({height:"50%"},divAnimationTime);
-                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
-                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                    $('.tag-container_2').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container_2').animate({left:"0",opacity:1},divAnimationTime);
                 }
                 else{
                     $('.bottom-transparent-cover').animate({height:"50%"},divAnimationTime);
-                    $('.tag-container').animate({right:"0",opacity:1},divAnimationTime);
-                    $('.words-container').animate({left:"0",opacity:1},divAnimationTime);
+                    $('.tag-container_2').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.words-container_2').animate({left:"0",opacity:1},divAnimationTime);
                 }
 
             }
+            if(index == 7){
+                if(screenWidth<=768){
+                    $('.right_box').animate({marginRight:"0",opacity:1},divAnimationTime);
+                }
+                else if(screenWidth>=1200){
+                    $('.left_box').animate({left:"0",opacity:1},divAnimationTime);
+                    $('.right_box').animate({right:"0",opacity:1},divAnimationTime);
+                }
+                else{
+                    $('.left_box').animate({left:"0",opacity:1},divAnimationTime);
+                    $('.right_box').animate({right:"0",opacity:1},divAnimationTime);
+                }
+
+            }
+
 
         },
 
@@ -101,13 +116,22 @@ $(document).ready(function() {
             if(index == 5){
                 if(screenWidth>=1200){
                     $('.bottom-transparent-cover').animate({height:"0px"},divAnimationTime);
-                    $('.tag-container').animate({right:"-50px",opacity:0},divAnimationTime);
-                    $('.words-container').animate({left:"-50px",opacity:0},divAnimationTime);
+                    $('.tag-container_2').animate({right:"-50px",opacity:0},divAnimationTime);
+                    $('.words-container_2').animate({left:"-50px",opacity:0},divAnimationTime);
                 }
                 else{
                     $('.bottom-transparent-cover').animate({height:"0px"},divAnimationTime);
-                    $('.tag-container').animate({right:"-50px",opacity:0},divAnimationTime);
-                    $('.words-container').animate({left:"-50px",opacity:0},divAnimationTime);
+                    $('.tag-container_2').animate({right:"-50px",opacity:0},divAnimationTime);
+                    $('.words-container_2').animate({left:"-50px",opacity:0},divAnimationTime);
+                }
+            }
+            if(index == 7){
+                if(screenWidth>=1200){
+                    $('.left_box ').animate({left:"-50px",opacity:0},divAnimationTime);
+                    $('.right_box').animate({right:"-50px",opacity:0},divAnimationTime);
+                }
+                else{
+                    $('.right_box').animate({marginRight:"-50px",opacity:0},divAnimationTime);
                 }
             }
 
