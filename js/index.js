@@ -72,8 +72,8 @@ $(document).ready(function() {
                     $('.right_box').animate({right:"0",opacity:1},divAnimationTime);
                 }
                 else{
-                    $('.left_box').animate({left:"0",opacity:1},divAnimationTime);
-                    $('.right_box').animate({right:"0",opacity:1},divAnimationTime);
+                    $('.left_box ').animate({marginLeft:"0",opacity:1},divAnimationTime);
+                    $('.right_box').animate({marginRight:"0",opacity:1},divAnimationTime);
                 }
 
             }
@@ -106,11 +106,11 @@ $(document).ready(function() {
                 }
                 else if(screenWidth<=768){
                     $('.text_t').animate({marginLeft:"-50px",opacity:0},divAnimationTime);
-                    $('.list_box').animate({marginRight:"0",opacity:0},divAnimationTime);
+                    $('.list_box').animate({marginRight:"-50px",opacity:0},divAnimationTime);
                 }
                 else{
                     $('.text_t').animate({marginLeft:"-50px",opacity:0},divAnimationTime);
-                    $('.list_box').animate({marginRight:"0",opacity:0},divAnimationTime);
+                    $('.list_box').animate({marginRight:"-50px",opacity:0},divAnimationTime);
                 }
             }
             if(index == 5){
@@ -131,6 +131,7 @@ $(document).ready(function() {
                     $('.right_box').animate({right:"-50px",opacity:0},divAnimationTime);
                 }
                 else{
+                    $('.left_box ').animate({marginLeft:"-50px",opacity:0},divAnimationTime);
                     $('.right_box').animate({marginRight:"-50px",opacity:0},divAnimationTime);
                 }
             }
