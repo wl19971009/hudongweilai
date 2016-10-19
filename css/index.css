@@ -14,7 +14,9 @@
 
 }
 */
-
+*{
+    font-family: 微软雅黑;
+}
 .section{
     background-size: cover;
 }
@@ -250,6 +252,9 @@ a{
 
 /*section1*/
 @media (min-width: 1200px){
+    .top-top{
+        display: none;
+    }
     .section-1{
        background-image: url("../imgs/1_1.fw.png");
         font-family: 微软雅黑;
@@ -331,6 +336,25 @@ a{
     }
 }
 @media (min-width: 768px) and (max-width: 1200px){
+    .top-top{
+        height: 48px;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        padding: 0 13px 0 13px;
+        position: fixed;
+        z-index: 9;
+    }
+    .left img{
+        width: 8px;
+        margin-top: 15px;
+        float: left;
+    }
+    .right{
+        font-size: 16px;
+        color: #fff;
+        line-height: 45px;
+    }
     .section-1{
         background-image: url("../imgs/1_1.fw.png");
         font-family: 微软雅黑;
@@ -366,6 +390,25 @@ a{
     }
 }
 @media (max-width: 768px){
+    .top-top{
+        height: 48px;
+        background-color: #000;
+        width: 100%;
+        text-align: center;
+        padding: 0 13px 0 13px;
+        position: fixed;
+        z-index: 9;
+    }
+    .left img{
+        width: 8px;
+        margin-top: 15px;
+        float: left;
+    }
+    .right{
+        font-size: 16px;
+        color: #fff;
+        line-height: 45px;
+    }
     .section-1{
         background-image: url("../imgs/1_3.fw.png");
         font-family: 微软雅黑;
@@ -377,7 +420,7 @@ a{
         position: absolute;
         top: 0;
     }
-    .section-1 .top{
+    .section-1 .top .left,.section-1 .top .right{
        display: none;
     }
     .section-1 .container .text{
@@ -429,7 +472,7 @@ a{
     }
 
     .section-2 .words-container .contents{
-        margin-top:65px;
+        margin-top:35px;
     }
 
 
@@ -493,6 +536,8 @@ a{
         margin-right: auto;
         opacity: 0;
         left:50px;
+        height: 310px;
+        overflow: hidden;
     }
 
     .section-2 .words-container a{
@@ -502,7 +547,7 @@ a{
     }
 
     .section-2 .words-container .contents{
-        margin-top:15px;
+        margin-top:25px;
     }
 }
 
@@ -523,6 +568,7 @@ a{
         padding-left: 20px;
         height: 0;
         opacity: 0;
+        position: relative;
     }
 
     .section-3 .container .text_box .text_t{
@@ -572,7 +618,14 @@ a{
         float: left;
     }
     .section-3 .container .list_box .box_b{
-        margin-top: 18px;
+        margin-top: 12px;
+        border-bottom: 1px solid #fff;
+        padding: 0 0 10px 0;
+        width: 78px;
+        margin-left: 5px;
+    }
+    .section-3 .container .list_box .box_b:nth-child(4){
+        border-bottom: none;
     }
     .section-3 .container .list_box span{
         font-size: 13px;
@@ -586,10 +639,7 @@ a{
         width: 663px;
         height: 285px;
         position: absolute;
-        top: 50%;
-        margin-top: -147px;
-        left: 50px;
-        margin-left: 417px;
+        left: 80%;
         opacity: 0;
     }
     .section-3 .container .computer .img_box{
@@ -652,6 +702,11 @@ a{
         padding: 0 15px 0 15px;
         width: 100%;
         opacity: 0;
+        height: 200px;
+        overflow: hidden;
+    }
+    .section-3 .container .text_box .text_t .text_tes{
+        margin-bottom: 100px;
     }
     .section-3 .container .text_box .text_t .text_t .container_text{
         margin-top: 100px;
@@ -671,11 +726,7 @@ a{
         display: block;
         margin-top: -5px;
     }
-    .section-3 .container .computer{
-        opacity: 0;
-        position: relative;
-        left: -50px;
-    }
+
     .section-3 .container .text_box .text_3{
         font-size: 12px;
         color: #CC0000;
@@ -698,7 +749,9 @@ a{
         margin:  55px auto 0 auto;
         padding: 20px 10px 20px 10px;
         display: block;
-        /*opacity: 0;*/
+        opacity: 0;
+        position: relative;
+        left: -50px;
     }
     .section-3 .container .list_box .box_b{
         padding: 0;
@@ -737,6 +790,11 @@ a{
         width: 100%;
         opacity: 0;
         margin-left: -50px;
+        height: 250px;
+        overflow: hidden;
+    }
+    .section-3 .container .text_box .text_t .text_tes{
+        margin-bottom: 70px;
     }
     .section-3 .container .text_box .text_t .text_t .container_text{
         margin-top: 100px;
@@ -824,6 +882,7 @@ a{
     font-size: 0.9em;
     width:80px;
     height: 25px;
+    display: block;
 }
 /*>1200*/
 @media (min-width: 1200px) {
@@ -838,7 +897,6 @@ a{
 
     .section-4 .w-container .w-row{
         height: 500px;
-
         padding: 0px;
     }
     .section-4 .w-container .box-cute{
@@ -863,6 +921,13 @@ a{
         position: absolute;
         top: 0;
         left: 0;
+    }
+    .section-4 .w-container .w-message .box{
+        width: 75%;
+        right: 0;
+        top: 50%;
+        position: absolute;
+        margin-top: -120px;
     }
     .section-4 .w-container .boxleft{
         width: 110px;
@@ -903,20 +968,30 @@ a{
         margin-top: 5px;
     }
     .section-4 .boxright{
-        min-height: 230px;
+        height: 180px;
         position: absolute;
         top: 50%;
-        margin-top: -115px;
+        margin-top: -60px;
         right: -50px;
         width: 75%;
         padding-right: 15px;
         margin-right: 0px!important;
         opacity: 0;
+        display: block;
+        overflow: hidden;
     }
     .section-4 .w-container .left-row{
         height: 76px;
-        margin-left: 0px;
-        margin-top: 20%;
+        margin-left: 1px;
+        margin-top: 18%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+        width: 90px;
+        margin-left: 10px;
+        padding: 0;
+    }
+    .section-4 .w-container .left-row:nth-child(3){
+        border-bottom: none;
     }
 }
 /*ipad*/
@@ -958,16 +1033,19 @@ a{
     .section-4 .w-container .w-row{
         padding: 0px;
         height: 100%!important;
+        margin-top: 100px;
     }
     .section-4 .w-container .list-box{
         height:285px;
         width: 100%;
-
         margin-left: 0px;
+        position: relative;
     }
     .section-4 .w-container .list-box img{
         width: 100%;
         height: 100%;
+        position: absolute;
+        top: 0;
     }
     .section-4 .w-container .boxleft{
         height: 95px;
@@ -975,7 +1053,6 @@ a{
         margin-top: 50px;
         margin-left: 0px;
         margin-right: 0px;
-
         right: 0px;
     }
     .section-4 .w-container .boxleft img{
@@ -1009,10 +1086,14 @@ a{
         text-align: center;
     }
     .section-4  .w-container .boxright{
-        min-height: 222px;
+        height: 200px;
+        overflow: hidden;
         margin-left: 20px!important;
         margin-right: 20px!important;
-        margin-top: 56px;
+
+    }
+    .section-4  .w-container .boxright .box-message{
+        margin-bottom: 100px;
     }
     .section-4 .w-container  .box-title{
         color: #fff;
@@ -1028,7 +1109,6 @@ a{
         color: #fff;
         line-height: 25px;
         font-size: 14px;
-
     }
     .section-4 .w-container .box-button{
         border: 1px solid #fff;
@@ -1076,6 +1156,10 @@ a{
     .section-4 .w-container .w-row{
         padding: 0px;
         height: 100%!important;
+        margin-top: 150px;
+    }
+    .section-4 .w-container .w-row .box{
+        text-align: center;
     }
     .section-4 .w-container .list-box{
         display: none;
@@ -1123,7 +1207,11 @@ a{
         min-height: 222px;
         margin-left: 20px!important;
         margin-right: 20px!important;
-        margin-top: 56px;
+        height: 280px;
+        overflow: hidden;
+    }
+    .section-4  .w-container .boxright .box-message{
+        margin-bottom: 100px;
     }
     .section-4 .w-container  .box-title{
         color: #fff;
@@ -1178,6 +1266,7 @@ a{
         top:30%;
         opacity: 0;
     }
+
     .section-5 .tag-container_2 .tag-container-image{
         height: 285px;
     }
@@ -1194,8 +1283,13 @@ a{
        }
     .section-5 .tag-container_2 .tag-container-tag{
         text-align: center;
-        height: 100%;
-        padding-top:20px;
+        height: 90px;
+        border-right: 1px solid #fff;
+        padding: 10px 0 0 0;
+        margin-top: 10px;
+    }
+    .section-5 .tag-container_2 .tag-container-tag:nth-child(3){
+        border-right: none;
     }
 
     .section-5 .tag-container_2 .tag-container-tag p{
@@ -1211,6 +1305,11 @@ a{
         width: 570px;
         opacity: 0;
         left: -50px;
+    }
+    .section-5 .words-container_2 .contents-container{
+        height: 125px;
+        width: 570px;
+        overflow: hidden;
     }
     .section-5 .rm-padding .text_1{
         font-size: 35px;
@@ -1233,7 +1332,7 @@ a{
     }
 
     .section-5 .words-container_2 .contents{
-        margin-top:35px;
+        margin-top:10px;
         color: #cc0000;
         font-size: 15px;
     }
@@ -1377,6 +1476,8 @@ a{
         text-align: center;
         height: 100%;
         padding:0 !important;
+        border-right: 1px solid #fff;
+        height: 60px;
     }
 
     .section-5 .tag-container_2 .tag-container-tag img{
@@ -1397,6 +1498,8 @@ a{
         margin-top: 30px;
         width: 75%;
         height: auto;
+        height: 290px;
+        overflow: hidden;
     }
     .section-5 .rm-padding .text_1{
         font-size: 17px;
@@ -1429,7 +1532,7 @@ a{
 /*section-6*/
 @media (min-width: 1200px) {
     .w-back-red{
-        background-color: red;
+        background-color: #fff;
     }
     .section-6{
         background-image: url("../imgs/s6-bg.fw.png");
@@ -1460,7 +1563,9 @@ a{
     }
 
     .section-6 .words-container .contents{
-        margin-top:65px;
+        margin-top:35px;
+        height: 220px;
+        overflow: hidden;
     }
     .section-6 .back-white{
         background-color:#cc0000;
@@ -1508,6 +1613,8 @@ a{
         margin-right: auto;
         opacity: 0;
         left:50px;
+        height: 300px;
+        overflow: hidden;
     }
 
     .section-6 .words-container a{
@@ -1536,7 +1643,7 @@ a{
     }
     .section-6 .tag-container{
         position: relative;
-        top: 70%;
+        top: 75%;
         right:50px;
         opacity: 0;
         margin-left: auto;
@@ -1551,6 +1658,8 @@ a{
         margin-right: auto;
         opacity: 0;
         left:50px;
+        height: 300px;
+        overflow: hidden;
     }
 
     .section-6 .words-container a{
@@ -1566,7 +1675,7 @@ a{
         text-align: center;
     }
     .section-6 .words-container .contents{
-        margin-top:15px;
+        margin-top:25px;
     }
 }
 
@@ -1624,13 +1733,12 @@ a{
     }
     .section-7 .wl_container .right_box .text{
         width: 594px;
-        height: auto;
-        position: absolute;
-        bottom: 0;
+        max-height: 140px;
+        margin-top: 200px;
+        overflow: hidden;
     }
     .section-7 .wl_container .right_box .text .text_p{
-        position: absolute;
-        bottom: 0;
+        margin-bottom: 300px;
     }
     .section-7 .wl_container .right_box .p_1{
         font-size: 22px;
@@ -1717,8 +1825,16 @@ a{
     }
     .section-7 .wl_container .right_box .xuanzhuan li:hover .border_box{
         height: 183px;
-        transition-duration:0.3s;
+        transition: all 1s;
         /*transform: rotate(40deg);*/
+    }
+    .section-7 .wl_container .right_box .xuanzhuan li:hover .icons{
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
+    .section-7 .wl_container .right_box .xuanzhuan li a:hover{
+        transform: rotate(360deg);
+        transition: all 0.5s;
     }
 
 }
@@ -1735,12 +1851,12 @@ a{
     .section-7 .wl_container .left_box{
         width: 507px;
         height: 336px;
-        margin: 40px auto 0 auto;
+        margin: 100px auto 0 auto;
         border: 10px solid #fff;
         background: url("../imgs/7_2.fw.png")no-repeat;
         position: relative;
         opacity: 0;
-        left: -50px;
+        left: -50px;                                        /*改变*/
     }
     .section-7 .wl_container .left_box img{
         position: absolute;
@@ -1756,12 +1872,18 @@ a{
         margin-left: auto;
         /*opacity: 0;*/
         margin-right: auto;
+        margin-top: 30px;                                 /*改变*/
     }
     .section-7 .wl_container .right_box .text{
         width: 594px;
-        height: auto;
-        position: absolute;
-        bottom: 0;
+        height: 130px;
+        overflow: hidden;
+        /*position: absolute;*/
+        /*margin-top: 120px;*/
+    }
+    .section-7 .wl_container .right_box .text .text_p{
+        margin-bottom: 100px;
+        margin-top: 20px;
     }
     .section-7 .wl_container .right_box .p_1{
         font-size: 22px;
@@ -1845,9 +1967,14 @@ a{
         border-radius: 50%;
         transform: rotate(40deg);
     }
+    .section-7 .wl_container .right_box .xuanzhuan li:hover .icons{
+        transform: rotate(360deg);
+        transition: all 0.5s;
+    }
     .section-7 .wl_container .right_box .xuanzhuan li:hover .border_box{
         height: 183px;
-        transition-duration:0.3s;
+        transition-duration:0.5s;
+        transform: rotate(360deg);
     }
 
 }
@@ -1873,6 +2000,8 @@ a{
         position: relative;
         left: -50px;
         opacity: 0;
+        height: 225px;
+        overflow: hidden;
     }
     .section-7 .wl_container .right_box .p_1{
         font-size: 22px;
@@ -1974,8 +2103,11 @@ a{
     }
 
 }
-/*section8*/
 @media (min-width: 1200px){
+    .section-8 .w-message-right{
+        height: 80px;overflow: hidden;
+        width: 0;
+    }
     .section-8 {
         background: url("../imgs/s8-bg.fw.png");
     }
@@ -1990,9 +2122,39 @@ a{
     .section-8 .w-box-button{
         display: none;
     }
+    .section-8  .w-message{
+        height: 80px;
+        width: 50%;
+    }
+    .section-8  .w-message:nth-child(odd){
+        border-right: 1px solid #fff;
+        clear: both;
+    }
+    .section-8  .w-message:nth-child(even){
+        border-left: 1px solid #fff;
+        float: right;
+        margin-right: 1.5px;
+
+    }
+    .section-8  .w-message:nth-child(even) .w-message-right{
+        float: right;
+    }
+    .section-8  .w-message:nth-child(odd) .w-message-left{
+        float: right;
+        margin-right: 110%
+
+    }
+    .section-8  .w-message:nth-child(even) .w-message-left{
+        float: left;
+        margin-left: 110%
+    }
+    .section-8  .w-message:nth-last-child(1){
+        border: none;
+    }
     .message-left-title{
         display: block;
-        margin-left: 25%;
+        text-align: right;
+        width: 45%;
         color: #cc0000;
         font-size: 16px;
     }
@@ -2000,7 +2162,7 @@ a{
         display: block;
         margin-left: 33%;
         color: #fff;
-        margin-top: -10px;
+        margin-top: -17px;
         font-size: 22px;
     }
 }
@@ -2011,16 +2173,14 @@ a{
     position: relative;
 }
 .section-8 .w-message{
-    overflow: hidden;
+
+    position: relative;
 }
 .section-8 .w-message-left{
     width: 62px;
     height: 62px;
     background: url("../imgs/beijing.fw.png");
     border-radius:50% ;
-    margin-left: 0;
-    float: left;
-    position: relative;
 }
 .section-8 .on{
 
@@ -2034,14 +2194,7 @@ a{
     font-weight: bold;
 }
 
-.section-8  .w-message-line{
-    height: 0px;
-    width: 1px;
-    background-color: #fff;
-    top: 20px;
-    left: 51.5%;
-    position: absolute;
-}
+
 .section-8 .w-message-title{
     font-weight: bold;
     color: #fff;
@@ -2061,73 +2214,9 @@ a{
     color: #fff;
     font-size: 12px;
 }
-.section-8 .w-message-right{
-    margin-left: 60%;
-    min-height: 80px;
-    opacity: 0;
-}
-.section-8 .w-message:nth-child(2n) .w-message-right{
-    margin-left: -55%;
-    width: 100%;
-    float: left;
-    min-height: 80px;
-    width: 45%;
-}
+
 
 @media (min-width: 768px)and (max-width: 1200px){
-    .section-8{
-        background: url("../imgs/s8-sj-bg.fw.png") no-repeat;
-    }
-    .section-8 .w-message-line{
-        display:none;
-    }
-    .section-8 .w-container{
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-    }
-    .section-8 .w-backbox{
-        background: rgba(0,0,0,0.3);
-        width: 100%;
-        height: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .section-8 .w-message-left{
-        width: 60px;
-        height: 60px;
-        background: url("../imgs/beijing.fw.png");
-        border-radius: 50%;
-    }
-    .section-8 .w-message:nth-child(even) .w-message-left{
-        float: right;
-    }
-    .section-8 .w-message-right{
-        width: 100%;
-        min-height: 80px;
-        background:rgba(204,0,0,0.7) ;
-        color: #fff;
-        overflow: hidden;
-        padding: 20px;
-    }
-    .section-8 .w-message{
-        margin-top: 50px;
-    }
-    .section-8 .message-left-title{
-        margin-left: 25%;
-        color: #cc0000;
-    }
-    .section-8 .message-left-word{
-        margin-left: 40%;
-        display: block;
-        margin-top: 5px;
-        font-size: 20px;
-        color: #fff;
-    }
-}
-@media (max-width: 768px){
     .section-8{
         background: url("../imgs/s8-sj-bg.fw.png") no-repeat;
     }
@@ -2150,7 +2239,7 @@ a{
 
     }
     .section-8 .w-message-box{
-        height: 500px;
+        height: 100%;
         overflow: hidden;
     }
     .section-8 .w-message-left{
@@ -2158,9 +2247,10 @@ a{
         height: 60px;
         background: url("../imgs/beijing.fw.png");
         border-radius: 50%;
+        float: right;
     }
     .section-8 .w-message:nth-child(even) .w-message-left{
-        float: right;
+        float:left ;
     }
     .section-8 .w-message-right{
         width: 100%;
@@ -2201,6 +2291,82 @@ a{
         margin-right: 20px;
     }
 }
+@media (max-width: 768px){
+    .section-8{
+        background: url("../imgs/s8-sj-bg.fw.png") no-repeat;
+    }
+    .section-8 .w-message-line{
+        display:none;
+    }
+    .section-8 .w-container{
+        width: 100%;
+        height: 100%;
+
+        position: relative;
+    }
+    .section-8 .w-backbox{
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .section-8 .w-message-box{
+        height: 100%;
+        overflow: hidden;
+    }
+    .section-8 .w-message-left{
+        width: 60px;
+        height: 60px;
+        background: url("../imgs/beijing.fw.png");
+        border-radius: 50%;
+        float: right;
+    }
+    .section-8 .w-message:nth-child(even) .w-message-left{
+        float:left ;
+    }
+    .section-8 .w-message-right{
+        width: 100%;
+        min-height: 80px;
+        background:rgba(204,0,0,0.7) ;
+        color: #fff;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .section-8 .w-message{
+        margin-top: 15px;
+    }
+    .section-8 .message-left-title{
+        margin-left: 25%;
+        color: #cc0000;
+    }
+    .section-8 .message-left-word{
+        margin-left: 40%;
+        display: block;
+        margin-top: 5px;
+        font-size: 20px;
+        color: #fff;
+    }
+    .section-8 .w-box-button{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        color: #cc0000;
+        font-size: 50px;
+        padding: 20px;
+    }
+    .section-8 .w-box-button .left-btn{
+        float: left;
+    }
+    .section-8 .w-box-button .right-btn{
+        float: right;
+        margin-right: 20px;
+    }
+}
+
 /*section-9*/
 @media (min-width: 1200px){
     .section-9 .ditu{
@@ -2388,6 +2554,9 @@ a{
         color: #fff;
         min-height: 41%;
         padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
     .section-9 .w-pic img{
         display: block;
@@ -2461,15 +2630,12 @@ a{
         border: 4px solid #cc0000!important;
         color: #cc0000!important;
     }
-}
-.section-2 .tag-container .tag-container-tag:before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 15%;
-    width: 1px;
-    height: 70%;
-    border-left: 1px solid red;
+
+    .section-9 .ditu iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
 }
 
 .section-2 .tag-container .tag-container-tag:first-child:before{
