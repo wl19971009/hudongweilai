@@ -1,0 +1,637 @@
+@charset "utf-8";
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0; }  
+table {border-collapse:collapse;border-spacing:0;}   
+input,textarea{outline-style:none;}
+fieldset,img {border:0;}   
+address,caption,cite,code,dfn,em,strong,th,var {font-weight:normal;font-style:normal;}   
+ol,ul {list-style:none;}   
+caption,th {text-align:left;}   
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;}   
+q:before,q:after {content:'';}   
+abbr,acronym { border:0;} 
+p {word-wrap:break-word;}/*ie10*/
+a:active{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a{text-decoration: none;}
+*{font-family: "微软雅黑";}
+/*div index 10
+  menu index 20
+*/
+
+/*responsive template*/
+/*
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+
+}
+@media (max-width: 768px) {
+
+}
+*/
+/*=========================公益=========================================*/
+@media (min-width: 1200px) {
+	
+.container{
+	width:1230px;
+}
+.width100{width: 100%;}
+.w820{width:820px;}
+.fl{float: left;}
+.fr{float: right;}
+.f-s14{font-size:14px;}
+.border-tb{border-top:1px solid #e8e8e8;border-bottom: 1px solid #E8E8E8;}
+.font-red{color:#E70A00 !important;}
+.font-bold{font-weight: bold;}
+.p750{display: none;}
+
+
+
+
+
+
+.public_welfare .banner{
+	width:100%;
+	height: 550px;	
+	overflow: hidden;
+	position: relative;
+}
+.public_welfare .banner img{
+	position: absolute;
+	left: 50%;
+	margin-left:-950px;
+	height:100%;
+}
+.public_welfare .banner-text-box{
+	width:850px;
+	position: absolute;
+	left:50%;
+	margin-top:145px;
+	margin-left:-425px;
+	text-align: center;
+	
+}
+.public_welfare .banner-text-box h1{
+	font-size: 48px;
+	color:#fff;
+	font-family: "微软雅黑";
+	text-align: center;
+	margin-bottom:50px;
+}
+.public_welfare .banner-text-box p{
+	font-size:16px;
+	line-height:32px;
+	color: #fff;
+}
+
+.public_welfare .introduce{
+	overflow: hidden;
+	padding:50px 60px;
+	background:url(../imgs/gy/aixin.png) no-repeat left 60px top 84px;
+	background-size:240px;
+}
+.public_welfare .introduce p{
+	font-size:14px;
+	color: #333;
+	line-height:30px;
+	float: right;
+	padding:10px 0;
+	
+}
+.public_welfare .love-field h1{
+	font-size:22px;
+	font-weight: bold;
+	color:#333;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom:10px;
+	position: relative;
+}
+.public_welfare .love-field h1 span{
+	width:50px;
+	height: 2px;
+	background: red;
+	display: block;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	margin-left: -25px;
+	
+}
+.public_welfare .love-field .list-box{
+	margin-top:36px;
+	margin-left:-10px;
+	margin-right: -10px;
+	overflow: hidden;
+}
+.public_welfare .love-field .list-box li{
+	width:386px;
+	float: left;
+	margin:0 10px;
+}
+.public_welfare .imgbox{
+	height: 260px;
+	overflow: hidden;
+	position: relative;
+}
+.public_welfare .view-first img {
+   -webkit-transition: all 0.2s linear;
+   -moz-transition: all 0.2s linear;
+   -o-transition: all 0.2s linear;
+   -ms-transition: all 0.2s linear;
+   transition: all 0.2s linear;
+}
+.public_welfare .list-box li :hover .view-first img {
+   -webkit-transform: scale(1.1,1.1);
+   -moz-transform: scale(1.1,1.1);
+   -o-transform: scale(1.1,1.1);
+   -ms-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1);
+}
+.public_welfare .list-box li :hover .textbox{
+	background: #CC0000;
+
+}
+.public_welfare .list-box li :hover .textbox *{
+		color: #fff;
+}
+.public_welfare .imgbox img{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+}
+.public_welfare .textbox{
+	padding: 10px;
+	background:#f7f7f7;
+	width: 100%;
+}
+.public_welfare .textbox h2{
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	margin:10px 0;
+}
+.public_welfare .textbox p{
+	font-size:14px;
+	color: #999;
+	line-height:26px;
+}
+.public_welfare .ceo-redbg{
+	width: 100%;
+	height: 230px;
+	margin-top:70px;
+	background:#cc0000;
+	position: relative;
+}
+.public_welfare .ceo-redbg .ceo-imgbox{
+	float: left;
+	width: 346px;
+	height: 460px;
+	overflow: hidden;
+}
+.public_welfare .ceo-redbg .ceo-imgbox img{
+	width:100%;
+}
+.public_welfare .ceo-redbg .ceo-text{
+	float:right;
+}
+.public_welfare .ceo-imglest{
+	margin-left:356px;
+	position: absolute;
+	bottom: 0;
+}
+.public_welfare .ceo-imglest img{
+	margin:0 15px;
+	float: left;
+}
+.public_welfare .ceo-introduce{
+	position: absolute;
+	left:50%;
+	top:50px;
+	margin-left:-600px;
+	width: 1200px;
+}
+.public_welfare .ceo-introduce h1{
+	font-size: 22px;
+	font-weight:bold;
+	color: #fff;
+}
+.public_welfare .ceo-introduce h2{
+	font-size:15px;
+	font-weight:bold;
+	color: #fff;
+	line-height: 26px;
+	margin-top: 30px;
+}
+.public_welfare .ceo-introduce p{
+	font-size:14px;
+	color: #fff;
+	margin-top: 30px;
+}
+.public_welfare .ceo-parag{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top:550px;
+	
+}
+.public_welfare .ceo-parag h1{
+	color: #333;
+	float: left;
+	font-size: 18px;
+	font-weight:bold ;
+	border-bottom:2px solid #cc0000;
+	line-height:26px;
+}
+.public_welfare .ceo-parag p{
+	width: 1200px;
+	float: left;
+	font-size:15px;
+	line-height:32px;
+	margin-top: 10px;
+	padding-bottom:70px;
+}
+}
+
+/*=======================================================*/
+@media (max-width: 768px){
+
+.border-b{border-bottom: 1px solid #E8E8E8;}
+.padding-b{padding-bottom:10px;}
+.font-red{color:#E70A00 !important;}
+.font-bold{font-weight: bold;}
+.p1200{display: none;}
+
+
+
+
+
+
+
+
+.public_welfare{}
+.public_welfare .banner{
+	height:240px;
+	overflow: hidden;
+	position: relative;
+}
+.public_welfare .banner img{
+	height: 100%;
+	position: absolute;
+    left:0;
+}
+.public_welfare .banner-text-box{
+	width: 80%;
+	margin: 0 auto;
+	position: inherit;
+}
+.public_welfare .banner-text-box h1{
+	margin-top: 50px;
+	font-size:20px;
+	color:#fff;
+	text-align: center;
+}
+.public_welfare .banner-text-box p{
+	font-size:12px;
+	color:#fff;
+	margin-top: 30px;
+}
+
+.public_welfare .introduce{
+	overflow: hidden;
+	background:url(../imgs/gy/aixin.png) no-repeat left 50% top 30px;
+	background-size:260px;
+	padding-top: 230px;
+}
+.public_welfare .introduce p{
+	font-size:12px;
+	color:#333;
+	line-height:20px;
+	margin-bottom:10px;
+}
+.public_welfare .love-field h1{
+	font-size:15px;
+	font-weight: bold;
+	color:#333;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom:10px;
+	margin-top:30px;
+	position: relative;
+}
+.public_welfare .love-field h1 span{
+	width:50px;
+	height: 2px;
+	background: red;
+	display: block;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	margin-left: -25px;
+}
+.public_welfare .love-field .list-box{
+	overflow: hidden;
+}
+.public_welfare .love-field .list-box li{
+	margin-top:36px;
+	width: 100%;
+}
+.public_welfare .imgbox{
+	height: 260px;
+	overflow: hidden;
+	background: #EDEDED;
+}
+.public_welfare .imgbox img{    
+	display: block;
+  margin: 0 auto;
+}
+.public_welfare .textbox{
+	padding: 10px;
+	background:#f7f7f7;
+	width: 100%;
+}
+.public_welfare .textbox h2{
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	margin:10px 0;
+}
+.public_welfare .textbox p{
+	font-size:12px;
+	color: #999;
+	line-height:20px;
+}
+.public_welfare .ceo-redbg{
+	width: 100%;
+	margin-top:36px;
+	overflow: hidden;
+	background:#cc0000;
+	padding-bottom:30px;
+}
+.public_welfare .ceo-redbg .ceo-text{
+	padding:0 15PX;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFF;
+
+}
+.public_welfare .ceo-redbg .ceo-text h1{
+	font-size: 17px;
+	font-weight:bold;
+	margin-top:15px;
+}
+.public_welfare .ceo-redbg .ceo-text h2{
+	font-size: 10px;
+	font-weight:bold;
+	line-height:16px;
+	margin-top:5px;
+	
+}
+.public_welfare .ceo-redbg .ceo-text p{
+	font-size: 11px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top:10px;
+}
+.public_welfare .ceo-redbg .ceo-imgbox{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+.public_welfare .ceo-redbg .ceo-imgbox img{
+	width:100%;
+}
+.public_welfare .ceo-imglest img{
+	width: 100%;
+	margin-top: 20px;
+}
+.public_welfare .ceo-imglest h1{
+	font-size:15px;
+	text-align:center;
+	font-weight: bold;
+	height:40px;
+	line-height:40px;
+	position: relative;
+	margin: 20px 0;
+}
+.public_welfare .ceo-imglest p{
+	font-size:12px;
+	color:#333;
+	padding-bottom:40px;
+}
+.public_welfare .ceo-imglest h1 span{
+	display: block;
+	width:70px;
+	height: 2px;
+	background: #CC0000;
+	left: 50%;
+	margin-left:-35px;
+	position: absolute;
+	bottom:0;
+}
+}
+
+
+/*=======================================================*/
+@media (min-width: 768px) and (max-width: 1200px){
+
+.border-b{border-bottom: 1px solid #E8E8E8;}
+.padding-b{padding-bottom:10px;}
+.font-red{color:#E70A00 !important;}
+.font-bold{font-weight: bold;}
+.p1200{display: none;}
+
+
+
+
+
+
+
+
+.public_welfare{}
+.public_welfare .banner{
+	height:240px;
+	overflow: hidden;
+	position: relative;
+}
+.public_welfare .banner img{
+	height: 100%;
+	position: absolute;
+    left:0;
+}
+.public_welfare .banner-text-box{
+	width: 80%;
+	margin: 0 auto;
+	position: inherit;
+}
+.public_welfare .banner-text-box h1{
+	margin-top: 50px;
+	font-size:20px;
+	color:#fff;
+	text-align: center;
+}
+.public_welfare .banner-text-box p{
+	font-size:12px;
+	color:#fff;
+	margin-top: 30px;
+}
+
+.public_welfare .introduce{
+	overflow: hidden;
+	background:url(../imgs/gy/aixin.png) no-repeat left 50% top 30px;
+	background-size:260px;
+	padding-top: 230px;
+}
+.public_welfare .introduce p{
+	font-size:12px;
+	color:#333;
+	line-height:20px;
+	margin-bottom:10px;
+}
+.public_welfare .love-field h1{
+	font-size:15px;
+	font-weight: bold;
+	color:#333;
+	text-align: center;
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom:10px;
+	margin-top:30px;
+	position: relative;
+}
+.public_welfare .love-field h1 span{
+	width:50px;
+	height: 2px;
+	background: red;
+	display: block;
+	position: absolute;
+	bottom:0;
+	left: 50%;
+	margin-left: -25px;
+}
+.public_welfare .love-field .list-box{
+	overflow: hidden;
+}
+.public_welfare .love-field .list-box li{
+	margin-top:36px;
+	width: 100%;
+}
+.public_welfare .imgbox{
+	height: 260px;
+	overflow: hidden;
+	background:#EDEDED;
+}
+.public_welfare .imgbox img{    
+	display: block;
+  margin: 0 auto;
+}
+.public_welfare .textbox{
+	padding: 10px;
+	background:#f7f7f7;
+	width: 100%;
+}
+.public_welfare .textbox h2{
+	text-align: center;
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	margin:10px 0;
+}
+.public_welfare .textbox p{
+	font-size:12px;
+	color: #999;
+	line-height:20px;
+}
+.public_welfare .ceo-redbg{
+	width: 100%;
+	margin-top:36px;
+	overflow: hidden;
+	background:#cc0000;
+	padding-bottom:30px;
+}
+.public_welfare .ceo-redbg .ceo-text{
+	padding:0 15PX;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFF;
+
+}
+.public_welfare .ceo-redbg .ceo-text h1{
+	font-size: 17px;
+	font-weight:bold;
+	margin-top:15px;
+}
+.public_welfare .ceo-redbg .ceo-text h2{
+	font-size: 10px;
+	font-weight:bold;
+	line-height:16px;
+	margin-top:5px;
+	
+}
+.public_welfare .ceo-redbg .ceo-text p{
+	font-size: 11px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top:10px;
+}
+.public_welfare .ceo-redbg .ceo-imgbox{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 13px;
+}
+.public_welfare .ceo-redbg .ceo-imgbox img{
+	width:100%;
+}
+.public_welfare .ceo-imglest img{
+	width: 100%;
+	margin-top: 20px;
+}
+.public_welfare .ceo-imglest h1{
+	font-size:15px;
+	text-align:center;
+	font-weight: bold;
+	height:40px;
+	line-height:40px;
+	position: relative;
+	margin: 20px 0;
+}
+.public_welfare .ceo-imglest p{
+	font-size:12px;
+	color:#333;
+	padding-bottom:40px;
+}
+.public_welfare .ceo-imglest h1 span{
+	display: block;
+	width:70px;
+	height: 2px;
+	background: #CC0000;
+	left: 50%;
+	margin-left:-35px;
+	position: absolute;
+	bottom:0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
