@@ -215,7 +215,7 @@ a{text-decoration: none;}
 	margin-top:-3px;
 }
 }
-/*==================================================================*/
+
 @media (max-width: 768px) {
 .p1200{display: none;}
 .border-no{border: none !important;}
@@ -710,10 +710,9 @@ a{text-decoration: none;}
 		margin-bottom: 10px;
 		display: block;
 	}
-	/**/
-		.noxian{
-			border-right:none!important;
-		}
+	.noxian{
+		border-right:none!important;
+	}
 	.comm .c-span .c-span-on{
 		background: #474A58;
 		border-right: none;
@@ -1040,9 +1039,12 @@ a{text-decoration: none;}
 		margin-bottom: 10px;
 		display: block;
 	}
-	/**/
 	.noxian{
 		border-right:none!important;
+	}
+	.comm .c-span-on{
+		background: #474A58;
+		border-right: none!important;
 	}
 	.comm .c-span img{
 		width: 25px;
@@ -1977,7 +1979,6 @@ a{text-decoration: none;}
 		margin-left: 20px;
 		line-height: 65px;
 		text-align: center;
-
 	}
 }
 @media (max-width: 768px){
@@ -2652,6 +2653,7 @@ a{text-decoration: none;}
 		bottom:0;
 	}
 }
+
 /*================================案例========================================*/
 @media (min-width: 1200px) {
 
@@ -3333,8 +3335,9 @@ a{text-decoration: none;}
 	}
 	.wl-quanwang-container .zuhe .hui li{
 		float: left;
-		margin-right: 59px;
+		margin-right: 46px;
 		margin-bottom: 50px;
+		width: 90px;
 	}
 	.wl-quanwang-container .zuhe .hui li img{
 		display: block;
