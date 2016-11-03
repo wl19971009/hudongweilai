@@ -2883,12 +2883,12 @@ display: block;
     .section-9 .ditu{
         width: 100%;
         position: relative;
-        height: 430px;
+        height: 503px;
     }
     .section-9 .ditu iframe{
         position: absolute;
         top: 0;
-        height: 430px;
+        height: 503px;
     }
     .section-9  .w-container-top{
         width: 100%;
@@ -2944,7 +2944,7 @@ display: block;
     .section-9 .w-map{
         width: 100%;
         background:url("../imgs/map.png") no-repeat;
-        position: relative;
+        position: absolute;
         bottom: 155px;
         left: 0;
         height: 170px!important;
