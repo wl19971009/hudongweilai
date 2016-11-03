@@ -2883,10 +2883,12 @@ display: block;
     .section-9 .ditu{
         width: 100%;
         position: relative;
+        height: 430px;
     }
     .section-9 .ditu iframe{
         position: absolute;
         top: 0;
+        height: 430px;
     }
     .section-9  .w-container-top{
         width: 100%;
@@ -2901,7 +2903,7 @@ display: block;
     }
     .section-9 .w-footer{
         width: 100%;
-        height: 25%;
+        height: 200px;
         background-color: #34373F;
         position: absolute;
         bottom: 0;
@@ -2943,7 +2945,7 @@ display: block;
         width: 100%;
         background:url("../imgs/map.png") no-repeat;
         position: relative;
-        bottom: -45%;
+        bottom: 155px;
         left: 0;
         height: 170px!important;
         background-size: 100%;
@@ -2952,7 +2954,7 @@ display: block;
     .section-9 .w-map-box{
         height: 100%;
         width: 455px;
-        margin: 0 auto 0 auto;
+        margin: -5px auto 0 auto;
     }
     .section-9  .w-map-box .cricle{
         width: 60px;
@@ -3039,9 +3041,9 @@ display: block;
     }
     .section-9 .w-map-box{
         height: 100%;
-        width: 325px;
+        width: 278px;
         margin: 0 auto;
-        margin-top: 57px;
+        margin-top: 0;
     }
     .section-9  .w-map-box .cricle{
         width: 41px;
@@ -3072,11 +3074,11 @@ display: block;
     .section-9 .w-footer{
         background-color: #34373f;
         color: #fff;
-        min-height: 41%;
         padding: 10px;
         position: absolute;
         bottom: 0;
         width: 100%;
+        height: 280px;
     }
     .section-9 .w-pic img{
         display: block;
@@ -3127,16 +3129,17 @@ display: block;
     }
     .section-9 .w-map{
         background: url("../imgs/map.png") no-repeat;
-        height: 100px;
+        height: 85px;
         width: 100%;
         background-position-x: 49%;
         background-position-y: 65%;
-        margin-top: -125px;
         overflow: hidden;
+        position: absolute;
+        bottom: 280px;
     }
     .section-9 .w-map-box{
         height: 100%;
-        width: 325px;
+        width: 278px;
         margin: 0 auto;
         margin-top: 0;
     }
@@ -3150,7 +3153,7 @@ display: block;
         border: 2px solid #34373f;
         float: left;
         margin-top: 35px;
-        margin-left: 29px;
+        margin-left: 18px;
         line-height: 34px;
         text-align: center;
         color: #34373f;
