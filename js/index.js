@@ -436,7 +436,4 @@ $(function(){
         $(".top .left ul li a[href^='index']").addClass("oo")
     }
 
-
-
-
 });
