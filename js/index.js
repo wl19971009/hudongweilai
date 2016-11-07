@@ -145,7 +145,6 @@ $(document).ready(function() {
                 }
 
             }
-
             if (index == 8) {
 
 
