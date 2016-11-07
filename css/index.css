@@ -190,7 +190,6 @@ a{
         margin-top: 10px;
     }
 }
-
 /*words container*/
 @media (min-width: 1200px) {
     .words-container{
@@ -211,7 +210,6 @@ a{
         /*background-color: #EDEDED;*/
     }
 }
-
 @media (min-width: 768px) and (max-width: 1200px) {
     .words-container{
         width:570px;
@@ -231,7 +229,6 @@ a{
         padding: 0 50px;
     }
 }
-
 @media (max-width: 768px) {
     .words-container{
         width:75%;
@@ -355,10 +352,10 @@ display: block;
         border: 1px solid #fff;
         border-radius: 10px;
         font-size: 12px;
-        display: block;
         text-align: center;
         line-height: 25px;
         margin-top: 6px;
+        padding: 3px 15px 3px 15px;
     }
     .menu .right_box2 .span_2 img{
         width: 40px;
@@ -645,9 +642,6 @@ display: block;
     }
      .top .right a{
         color: #fff;
-    }
-    .top .right a.cc{
-        color: #ED6C00;
     }
     .top .right a:hover{
         color: #ED6C00;
@@ -1101,7 +1095,7 @@ display: block;
         width: 100%;
         opacity: 0;
         height: 200px;
-        overflow: hidden;
+        margin-left: -50px;
     }
     .section-3 .container .text_box .text_t .text_tes{
         margin-bottom: 100px;
@@ -1115,24 +1109,23 @@ display: block;
         padding: 0;
     }
     .section-3 .container .text_box .text_1{
-        font-size: 18px;
         color: #CC0000;
     }
     .section-3 .container .text_box .text_2{
-        font-size: 15px;
+        font-size: 21px;
         color: #5E5E5E;
         display: block;
         margin-top: -5px;
     }
 
     .section-3 .container .text_box .text_3{
-        font-size: 12px;
+        font-size: 18px;
         color: #CC0000;
         line-height: 20px;
     }
     .section-3 .container .text_box .anniu{
-        width: 60px;
-        height: 25px;
+        width: 85px;
+        height: 30px;
         border: 1px solid #CC0000;
         font-size: 12px;
         color: #CC0000;
@@ -1149,7 +1142,8 @@ display: block;
         display: block;
         opacity: 0;
         position: relative;
-        left: -50px;
+        width: 575px;
+        right:-5% ;
     }
     .section-3 .container .list_box .box_b{
         padding: 0;
@@ -1167,7 +1161,18 @@ display: block;
         display: none;
     }
     .section-3 .container .img_box{
-        display: none;
+        width: 575px;
+        height: 285px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    .section-3 .container .img_box img{
+        width: 575px;
+        height: 285px;
+        position: absolute;
+        top: 5px;
+        left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -1454,7 +1459,7 @@ display: block;
     .section-4 .w-container .boxleft{
         height: 95px;
         background: #fff;
-        margin-top: 50px;
+        margin-top: -10px;
         margin-left: 0px;
         margin-right: 0px;
         right: 0px;
@@ -1502,7 +1507,7 @@ display: block;
     .section-4 .w-container  .box-title{
         color: #fff;
         text-align: left;
-        font-size: 24px;
+        font-size: 35px;
     }
     .section-4 .w-container .box-li-title{
         color: #fff;
@@ -1518,11 +1523,14 @@ display: block;
         border: 1px solid #fff;
         background: #F1EFEF;
         margin-top: 15px;
-        color: #fff;
         font-size: 14px;
         width:100px;
         height: 30px;
     }
+    .box{
+        margin-top: 30px;
+    }
+
 }
 /*shouji*/
 @media (max-width: 768px) {
@@ -1922,7 +1930,7 @@ display: block;
         position: absolute;
         top: 0;
         right: 10px;
-        padding: 3px 12px 3px 12px;
+        padding: 3px 6px 3px 6px;
         color: #cc0000;
         background-color: #F8FCF9;
         border: 1px solid #cc0000;
@@ -2049,6 +2057,14 @@ display: block;
 }
 
 @media (max-width: 768px) {
+    .tag-container-tag img{
+        width: 30px;
+        height: 30px;
+        margin-top: 14px;
+    }
+    .i1{
+        display: none;
+    }
     .w-back-red{
         background-color: red;
     }
@@ -2348,12 +2364,13 @@ display: block;
     .section-7 .wl_container .left_box{
         width: 507px;
         height: 336px;
-        margin: 100px auto 0 auto;
+        margin: 150px auto 0 auto;
         border: 10px solid #fff;
         background: url("../imgs/7_2.fw.png")no-repeat;
         position: relative;
         opacity: 0;
-        left: -50px;                                        /*改变*/
+        display: block;
+       margin-left: -50px;
     }
     .section-7 .wl_container .left_box img{
         position: absolute;
@@ -2367,16 +2384,16 @@ display: block;
         height: 336px;
       position: relative;
         margin-left: auto;
-        /*opacity: 0;*/
+        opacity: 0;
         margin-right: auto;
-        margin-top: 30px;                                 /*改变*/
+        margin-top: 30px;
+        margin-right: 50px;
+        float: right;
     }
     .section-7 .wl_container .right_box .text{
         width: 594px;
         height: 130px;
-        overflow: hidden;
-        /*position: absolute;*/
-        /*margin-top: 120px;*/
+        overflow: hidden
     }
     .section-7 .wl_container .right_box .text .text_p{
         margin-bottom: 100px;
@@ -2394,13 +2411,14 @@ display: block;
     .section-7 .wl_container .right_box .xuanzhuan{
         width: auto;
         height: auto;
+        padding: 0;
     }
     .section-7 .wl_container .right_box .xuanzhuan li{
-        width: 162px;
-        height: 162px;
+        width: 100px;
+        height: 100px;
         float: left;
         list-style: none;
-        margin-left: -30px;
+        margin-left: 27px;
 
     }
     .section-7 .wl_container .right_box .xuanzhuan li a{
@@ -2473,7 +2491,17 @@ display: block;
         transition-duration:0.5s;
         transform: rotate(360deg);
     }
-
+    .section-7 .wl_container .right_box .text .text_p{
+        position:absolute;
+        bottom: -70px;;
+        opacity: 0;
+    }
+    .section-7 .wl_container .right_box .text .text_p:first-child{
+        opacity: 1;
+    }
+    .left_box{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2493,12 +2521,17 @@ display: block;
         position: relative;
     }
     .section-7 .wl_container .right_box .text{
-        margin-top: 20px;
+        margin-top: 30px;
         position: relative;
         left: -50px;
+    }
+    .section-7 .wl_container .right_box .text .text_p{
+       position:absolute;
+        top: 0;
         opacity: 0;
-        height: 225px;
-        overflow: hidden;
+    }
+    .section-7 .wl_container .right_box .text .text_p:first-child{
+        opacity: 1;
     }
     .section-7 .wl_container .right_box .p_1{
         font-size: 22px;
@@ -2598,12 +2631,25 @@ display: block;
         height: 80px;
         transition-duration:0.3s;
     }
-
+    .left_box{
+        display: none;
+    }
 }
 @media (min-width: 1200px){
     .section-8 .w-message-right{
         height: 80px;overflow: hidden;
-        width: 0;
+        width: 80%;
+    }
+    .w-container .out{
+        display: none;
+    }
+    .section-8 .w-message .r2,.section-8 .w-message .r4,.section-8 .w-message .r6{
+        margin-right: -500px;
+        float: right;
+    }
+    .section-8 .w-message .r1,.section-8 .w-message .r3,.section-8 .w-message .r5,.section-8 .w-message .r7{
+        margin-left: -500px;
+        float: left;
     }
     .section-8 {
         background: url("../imgs/s8-bg.fw.png");
@@ -2714,8 +2760,12 @@ display: block;
 
 
 @media (min-width: 768px)and (max-width: 1200px){
+    .w-message-box{
+        display: none;
+    }
     .section-8{
         background: url("../imgs/s8-sj-bg.fw.png") no-repeat;
+        position: relative;
     }
     .section-8 .w-message-line{
         display:none;
@@ -2740,11 +2790,12 @@ display: block;
         overflow: hidden;
     }
     .section-8 .w-message-left{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         background: url("../imgs/beijing.fw.png");
         border-radius: 50%;
         float: right;
+        margin-bottom: 10px;
     }
     .section-8 .w-message:nth-child(even) .w-message-left{
         float:left ;
@@ -2755,7 +2806,7 @@ display: block;
         background:rgba(204,0,0,0.7) ;
         color: #fff;
         overflow: hidden;
-        padding: 20px;
+        padding: 15px;
     }
     .section-8 .w-message{
         margin-top: 15px;
@@ -2771,26 +2822,61 @@ display: block;
         font-size: 20px;
         color: #fff;
     }
-    .section-8 .w-box-button{
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-        color: #cc0000;
-        font-size: 50px;
-        padding: 20px;
+    .out{
+        width:100%;
+        height:auto;
+        margin-top: 105px
     }
-    .section-8 .w-box-button .left-btn{
+    .out .img{
+        position: relative;
+    }
+    .out .img li{
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+    }
+    .out .num{
+        display: none
+    }
+    .out .btn{
+        position:absolute;
+        bottom: 10px;
+        margin-top:-30px;
+        width:30px;
+        height:80px;
+        color:#cc0000;
+        text-align:center;
+        line-height:60px;
+        font-size:60px;
+        cursor:pointer;
+    }
+    .out:hover .btn{
+        display:block;
+    }
+    .out .left{
+        left:10px
+    }
+    .out .right{
+        right:46px;
+    }
+    .w-message-box{
+        display: none;
+    }
+    .w-message  .l2{
         float: left;
-    }
-    .section-8 .w-box-button .right-btn{
-        float: right;
-        margin-right: 20px;
     }
 }
 @media (max-width: 768px){
+    .w-message-box{
+        display: none;
+    }
+    .w-message .l2{
+        float: left!important;
+    }
     .section-8{
         background: url("../imgs/s8-sj-bg.fw.png") no-repeat;
+        position: relative;
     }
     .section-8 .w-message-line{
         display:none;
@@ -2815,11 +2901,12 @@ display: block;
         overflow: hidden;
     }
     .section-8 .w-message-left{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         background: url("../imgs/beijing.fw.png");
         border-radius: 50%;
         float: right;
+        margin-bottom: 10px;
     }
     .section-8 .w-message:nth-child(even) .w-message-left{
         float:left ;
@@ -2830,7 +2917,7 @@ display: block;
         background:rgba(204,0,0,0.7) ;
         color: #fff;
         overflow: hidden;
-        padding: 20px;
+        padding: 15px;
     }
     .section-8 .w-message{
         margin-top: 15px;
@@ -2846,21 +2933,43 @@ display: block;
         font-size: 20px;
         color: #fff;
     }
-    .section-8 .w-box-button{
-        width: 100%;
-        height: 100px;
-        position: absolute;
-        bottom: 0;
-        color: #cc0000;
-        font-size: 50px;
-        padding: 20px;
+    .out{
+        width:100%;
+        height:auto;
+        margin-top: 105px
     }
-    .section-8 .w-box-button .left-btn{
-        float: left;
+    .out .img{
+        position: relative;
     }
-    .section-8 .w-box-button .right-btn{
-        float: right;
-        margin-right: 20px;
+    .out .img li{
+        position:absolute;
+        top:0;
+        left:0;
+        display:block;
+    }
+    .out .num{
+        display: none
+    }
+    .out .btn{
+        position:absolute;
+        bottom: 10px;
+        margin-top:-30px;
+        width:30px;
+        height:80px;
+        color:#cc0000;
+        text-align:center;
+        line-height:60px;
+        font-size:60px;
+        cursor:pointer;
+    }
+    .out:hover .btn{
+        display:block;
+    }
+    .out .left{
+        left:10px
+    }
+    .out .right{
+        right:46px;
     }
 }
 
@@ -2869,10 +2978,12 @@ display: block;
     .section-9 .ditu{
         width: 100%;
         position: relative;
+        height: 503px;
     }
     .section-9 .ditu iframe{
         position: absolute;
         top: 0;
+        height: 503px;
     }
     .section-9  .w-container-top{
         width: 100%;
@@ -2887,7 +2998,7 @@ display: block;
     }
     .section-9 .w-footer{
         width: 100%;
-        height: 25%;
+        height: 200px;
         background-color: #34373F;
         position: absolute;
         bottom: 0;
@@ -2929,15 +3040,16 @@ display: block;
         width: 100%;
         background:url("../imgs/map.png") no-repeat;
         position: absolute;
-        bottom: 20%;
+        bottom: 200px;
         left: 0;
-        height: 170px;
+        overflow: hidden;
         background-size: 100%;
+        min-width: 130px;
     }
     .section-9 .w-map-box{
         height: 100%;
         width: 455px;
-        margin: -10px auto 0 auto;
+        margin: -5px auto 0 auto;
     }
     .section-9  .w-map-box .cricle{
         width: 60px;
@@ -2972,8 +3084,11 @@ display: block;
     .section-9 .w-footer{
         background-color: #34373f;
         color: #fff;
-        min-height: 41%;
         padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 280px;
     }
     .section-9 .w-pic img{
         display: block;
@@ -3015,29 +3130,44 @@ display: block;
     .section-9 .w-map{
         background: url("../imgs/map.png") no-repeat;
         position: absolute;
-        bottom: 39%;
+        bottom: 40%;
         height: 100px;
         left: 0px;
         width: 100%;
         background-position-x: 49%;
         background-position-y: 65%;
     }
+    .section-9 .w-map{
+        background: url("../imgs/map.png") no-repeat;
+        height: 85px;
+        width: 100%;
+        background-position-x: 49%;
+        background-position-y: 65%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 280px;
+    }
     .section-9 .w-map-box{
         height: 100%;
-        width: 100%;
+        width: 278px;
         margin: 0 auto;
+        margin-top: 0;
+    }
+    .section-9  .w-map-box .cricle:nth-child(1){
+        margin-left: 0;
     }
     .section-9  .w-map-box .cricle{
-        width: 50px;
-        height: 50px;
+        width: 41px;
+        height: 41px;
         border-radius: 50%;
-        border: 4px solid #34373f;
+        border: 2px solid #34373f;
         float: left;
         margin-top: 35px;
-        margin-left: 20px;
-        line-height: 50px;
+        margin-left: 18px;
+        line-height: 34px;
         text-align: center;
         color: #34373f;
+        font-size: 10px;
     }
     .section-9  .w-map-box .cricle:hover{
         border: 4px solid #cc0000;
@@ -3047,19 +3177,25 @@ display: block;
         border: 4px solid #cc0000!important;
         color: #cc0000!important;
     }
+    .section-9 .ditu iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+    }
 }
 @media (max-width: 768px){
+
     .section-9 .w-container-top{
         display: none;
     }
     .section-9 .w-footer{
         background-color: #34373f;
         color: #fff;
-        min-height: 41%;
         padding: 10px;
         position: absolute;
         bottom: 0;
         width: 100%;
+        height: 280px;
     }
     .section-9 .w-pic img{
         display: block;
@@ -3101,29 +3237,44 @@ display: block;
     .section-9 .w-map{
         background: url("../imgs/map.png") no-repeat;
         position: absolute;
-        bottom: 39%;
+        bottom: 40%;
         height: 100px;
         left: 0px;
         width: 100%;
         background-position-x: 49%;
         background-position-y: 65%;
     }
+    .section-9 .w-map{
+        background: url("../imgs/map.png") no-repeat;
+        height: 85px;
+        width: 100%;
+        background-position-x: 49%;
+        background-position-y: 65%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 280px;
+    }
     .section-9 .w-map-box{
         height: 100%;
-        width: 100%;
+        width: 278px;
         margin: 0 auto;
+        margin-top: 0;
+    }
+    .section-9  .w-map-box .cricle:nth-child(1){
+        margin-left: 0;
     }
     .section-9  .w-map-box .cricle{
-        width: 50px;
-        height: 50px;
+        width: 41px;
+        height: 41px;
         border-radius: 50%;
-        border: 4px solid #34373f;
+        border: 2px solid #34373f;
         float: left;
         margin-top: 35px;
-        margin-left: 20px;
-        line-height: 50px;
+        margin-left: 18px;
+        line-height: 34px;
         text-align: center;
         color: #34373f;
+        font-size: 10px;
     }
     .section-9  .w-map-box .cricle:hover{
         border: 4px solid #cc0000;
@@ -3133,7 +3284,6 @@ display: block;
         border: 4px solid #cc0000!important;
         color: #cc0000!important;
     }
-
     .section-9 .ditu iframe{
         position: absolute;
         top:0;
@@ -8969,7 +9119,7 @@ display: block;
     /*display: none;*/
 /*}*/
 
-/*.contents- container> .contents:first-child{*/
+/*.contents-container> .contents:first-child{*/
     /*display: block !important;*/
 /*}*/
 .footer{

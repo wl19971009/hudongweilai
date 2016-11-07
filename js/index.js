@@ -61,7 +61,7 @@ $(document).ready(function() {
                 else {
                     $(".top-top .right span").text("全网技术平台开发");
                     $('.text_t').animate({marginLeft: "0", opacity: 1}, divAnimationTime);
-                    $('.list_box').animate({left: "0", opacity: 1}, divAnimationTime);
+                    $('.list_box').animate({right: "0", opacity: 1}, divAnimationTime);
                 }
 
             }
@@ -130,8 +130,9 @@ $(document).ready(function() {
                 if (screenWidth <= 768) {
                     $(".top-top .right span").text("关于我们");
                     $('.left_box ').animate({left: "0", opacity: 1}, divAnimationTime);
-                    $('.right_box .text').animate({left: "0", opacity: 1}, divAnimationTime);
+                    $('.right_box .text').animate({left: "0",opacity: 1}, divAnimationTime);
                     $('.right_box .xuanzhuan').animate({right: "0", opacity: 1}, divAnimationTime);
+                    $('.right_box').animate({right:"0",opacity: 1}, divAnimationTime);
                 }
                 else if (screenWidth >= 1200) {
                     $('.left_box').animate({left: "0", opacity: 1}, divAnimationTime);
@@ -140,7 +141,7 @@ $(document).ready(function() {
                 else {
                     $(".top-top .right span").text("关于我们");
                     $('.left_box ').animate({marginLeft: "0", opacity: 1}, divAnimationTime);
-                    $('.right_box').animate({marginRight: "0", opacity: 1}, divAnimationTime);
+                    $('.right_box').animate({right: "50px", opacity: 1}, divAnimationTime);
                 }
 
             }
@@ -156,20 +157,20 @@ $(document).ready(function() {
                 }
                 else if (screenWidth >= 1200) {
                     $('.w-backbox').animate({height: "100%", top: "0"}, divAnimationTime);
-                    $('.r1').animate({width: "80%"}, 600);
-                    $('.l1').animate({marginRight: "-6%"},600)
-                    $('.r2').animate({width: "80%"},700);
-                    $('.l2').animate({marginLeft: "-5%"}, 700)
-                    $('.r3').animate({width: "80%"}, 900);
-                    $('.l3').animate({marginRight: "-6%"}, 900)
-                    $('.r4').animate({width: "80%"}, 1000);
-                    $('.l4').animate({marginLeft: "-5%"}, 1000)
-                    $('.r5').animate({width: "80%"}, 1100);
-                    $('.l5').animate({marginRight: "-6%"}, 1100)
-                    $('.r6').animate({width: "80%"}, 1200);
-                    $('.l6').animate({marginLeft: "-5%"}, 1200)
-                    $('.r7').animate({width: "80%"}, 1300);
-                    $('.l7').animate({marginRight: "-6%"}, 1300)
+                    $('.r1').animate({width: "80%",marginLeft: "0"}, 600);
+                    $('.l1').animate({marginRight: "-5%"},600)
+                    $('.r2').animate({width: "80%",marginRight: "0"},700);
+                    $('.l2').animate({marginLeft: "-6%"}, 700)
+                    $('.r3').animate({width: "80%",marginLeft: "0"}, 900);
+                    $('.l3').animate({marginRight: "-5%"}, 900)
+                    $('.r4').animate({width: "80%",marginRight: "0"}, 1000);
+                    $('.l4').animate({marginLeft: "-6%"}, 1000)
+                    $('.r5').animate({width: "80%",marginLeft: "0"}, 1100);
+                    $('.l5').animate({marginRight: "-5%"}, 1100)
+                    $('.r6').animate({width: "80%",marginRight: "0"}, 1200);
+                    $('.l6').animate({marginLeft: "-6%"}, 1200)
+                    $('.r7').animate({width: "80%",marginLeft: "0"}, 1300);
+                    $('.l7').animate({marginRight: "-5%"}, 1300)
                 }
 
 
@@ -227,7 +228,7 @@ $(document).ready(function() {
                 }
                 else {
                     $('.text_t').animate({marginLeft: "-50px", opacity: 0}, divAnimationTime);
-                    $('.list_box').animate({left: "-50px", opacity: 0}, divAnimationTime);
+                    $('.list_box').animate({right: "-50%", opacity: 0}, divAnimationTime);
                 }
             }
             if (index == 4) {
@@ -276,27 +277,26 @@ $(document).ready(function() {
                     $('.right_box').animate({right: "-50px", opacity: 0}, divAnimationTime);
                 }
                 else {
-                    $('.left_box ').animate({left: "-50px", opacity: 0}, divAnimationTime);
-                    $('.right_box .text').animate({left: "-50px", opacity: 0}, divAnimationTime);
-                    $('.right_box .xuanzhuan').animate({right: "-50px", opacity: 0}, divAnimationTime);
+                    $('.right_box').animate({right:"-5%",opacity: 0}, divAnimationTime);
+                    $('.left_box ').animate({marginLeft: "-50px", opacity: 0}, divAnimationTime);
                 }
             }
             if (index == 8) {
                 if (screenWidth >= 1200) {
                     $('.w-backbox').animate({height: "0px", opcity: 0}, divAnimationTime);
-                    $('.r1').animate({width: "0"},1600);
+                    $('.r1').animate({width: "80%",marginLeft: "-500px"},1600);
                     $('.l1').animate({marginRight: "100%"}, 1600)
-                    $('.r2').animate({width: "0"}, 1500);
+                    $('.r2').animate({width: "80%",marginRight: "-500px"}, 1500);
                     $('.l2').animate({marginLeft: "100%"}, 1500)
-                    $('.r3').animate({width: "0"}, 1400);
+                    $('.r3').animate({width: "80%",marginLeft: "-500px"}, 1400);
                     $('.l3').animate({marginRight: "100%"}, 1400)
-                    $('.r4').animate({width: "0"}, 1300);
+                    $('.r4').animate({width: "80%",marginRight: "-500px"}, 1300);
                     $('.l4').animate({marginLeft: "100%"}, 1300)
-                    $('.r5').animate({width: "0%"}, 1200);
+                    $('.r5').animate({width: "80%",marginLeft: "-500px"}, 1200);
                     $('.l5').animate({marginRight: "100%"}, 1200)
-                    $('.r6').animate({width: "0"}, 1100);
+                    $('.r6').animate({width: "80%",marginRight: "-500px"}, 1100);
                     $('.l6').animate({marginLeft: "100%"}, 1100)
-                    $('.r7').animate({width: "0"}, 1000);
+                    $('.r7').animate({width: "80%",marginLeft: "-500px"}, 1000);
                     $('.l7').animate({marginRight: "100%"}, 1000)
                 }
                 else {
@@ -358,7 +358,6 @@ $(document).ready(function() {
         $('.text_p').eq(index).stop().transition({opacity:1,y:-20},divAnimationTime);
         $('.text_p').eq(index).siblings().stop().transition({opacity:0,y:20},divAnimationTime);
     },function(){});
-
         $('#lic').click(function(){
             $('#men').slideToggle();
             var img = $(this).find('img').attr('src');
@@ -379,9 +378,15 @@ $(document).ready(function() {
         })
     $('.section-9 .w-map .w-map-box div').click(function () {
         var index = $(this).index();
-        $(this).attr('class',"w-map-on").siblings('div').attr('class',"cricle");
+        $(".section-9 .w-map .w-map-box div").eq($(this).index()).addClass("w-map-on").siblings().removeClass("w-map-on");
         $('.section-9 .ditu iframe').eq(index).show().siblings('.c-table-box').hide();
     });
+
+    //$('.section-9  .w-map-box .cricle').click(function () {
+    //    var index = $(this).index();
+    //    $(".section-9  .w-map-box .cricle").eq($(this).index()).addClass("w-map-on").siblings().removeClass("w-map-on");
+    //    $('.c-table-box').eq(index).show().siblings('.c-table-box').hide();
+    //});
     $(document).ready(function(){
         $('.wl-quanwang-container .dianshang li').click(function () {
             var index = $(this).index();
@@ -430,15 +435,39 @@ $(function(){
     }else{
         $(".top .left ul li a[href^='index']").addClass("oo")
     }
-
-});
-$(function(){
-    var inde=window.location.href.split("/").length-1;
-    var hre=window.location.href.split("/")[inde].substr(0,4);
-    if(href>0){
-        $(".top .right a[href^='"+hre+"']").addClass("cc")
-    }else{
-        $(".top .right a[href^='index']").addClass("cc")
-    }
-
+    $(function(){
+        //代码初始化
+        var size=$(".out .img li").size();
+        for(var i=1; i<=size; i++){
+            var li="<li>"+i+"</li>";
+            $(".out .num").append(li);
+        }
+        var i=0;
+        //核心向左运动函数
+        function moveL(){
+            i--;
+            if(i==-1){
+                i=size-1;
+            }
+            $(".out .numli").eq(i).addClass("active").siblings().removeClass("active");
+            $(".out .img li").eq(i).fadeIn(300).siblings().fadeOut(300);
+        }
+        //核心向右运动函数
+        function move(){
+            i++;
+            if(i==size){
+                i=0;
+            }
+            $(".out .num li").eq(i).addClass("active").siblings().removeClass("active");
+            $(".out .img li").eq(i).fadeIn(300).siblings().fadeOut(300);
+        }
+        //左边按钮点击事件
+        $(".out .left").click(function(){
+            moveL();
+        })
+        //右边按钮点击事件
+        $(".out .right").click(function(){
+            move()
+        })
+    })
 });
