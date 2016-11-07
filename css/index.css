@@ -2012,6 +2012,12 @@ display: block;
         color: #ffffff;
         cursor: pointer;
     }
+    .section-6 .i2{
+        display: none;
+    }
+    .section-6 .i2 .i1{
+        width: 50px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -2057,7 +2063,10 @@ display: block;
 }
 
 @media (max-width: 768px) {
-    .tag-container-tag img{
+    .tag-container-tag .i1{
+        display: none;
+    }
+    .tag-container-tag .i2{
         width: 30px;
         height: 30px;
         margin-top: 14px;
@@ -2635,13 +2644,14 @@ display: block;
         display: none;
     }
 }
+/*section-8*/
 @media (min-width: 1200px){
+    .section-8 .w-containers .out{
+        display: none;
+    }
     .section-8 .w-message-right{
         height: 80px;overflow: hidden;
         width: 80%;
-    }
-    .w-container .out{
-        display: none;
     }
     .section-8 .w-message .r2,.section-8 .w-message .r4,.section-8 .w-message .r6{
         margin-right: -500px;
